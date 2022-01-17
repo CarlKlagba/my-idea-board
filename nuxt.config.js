@@ -43,6 +43,22 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBFhIS1ZoHGvvfrBI-mFNyQiOGNtffol7I',
+          authDomain: 'my-idea-board.firebaseapp.com',
+          projectId: 'my-idea-board',
+          storageBucket: 'my-idea-board.appspot.com',
+          messagingSenderId: '252757060623',
+          appId: '1:252757060623:web:94cb03b6aa689b8aa1477a'
+        },
+        services: {
+          auth: true // Just as example. Can be any other service.
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
